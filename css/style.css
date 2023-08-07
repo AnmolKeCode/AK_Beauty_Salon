@@ -57,7 +57,6 @@ header .logo {
 
 header .logo:hover {
     transform: scale(1.1);
-
 }
 
 header ul {
@@ -409,8 +408,8 @@ header ul li #NavNum:hover {
 }
 
 
-/* section three  */
-.sectionthree {
+/* sectionThree */
+.sectionThree {
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -418,21 +417,18 @@ header ul li #NavNum:hover {
     background-color: #8484840a;
 }
 
-.sectionthree>h2 {
+.sectionThree>h2 {
     font-size: 2.5rem;
     font-family: var(--font-02);
     color: var(--global-color-0);
     text-align: center;
-
 }
 
-.sectionthree>p {
+.sectionThree>p {
     text-align: center;
-
-
 }
 
-.sectionthree .servicesBox {
+.sectionThree .servicesBox {
     margin-top: 1rem;
     display: grid;
     grid-template-columns: repeat(4, minmax(100px, 280px));
@@ -441,176 +437,169 @@ header ul li #NavNum:hover {
     justify-content: center;
 }
 
-.sectionthree .servicesBox .box {
+.sectionThree .servicesBox .box {
     padding: 3rem 1rem 1rem;
     box-shadow: 0 0 8px 3px #eeeeee;
     background-color: #fff;
     border-radius: 7px;
 }
 
-.sectionthree .servicesBox .box h2 {
+.sectionThree .servicesBox .box h2 {
     font-family: var(--font-02);
     line-height: 1.2em;
     font-size: 1.5rem;
     margin-bottom: 10px;
-
 }
 
-.sectionthree .servicesBox .box p {
+.sectionThree .servicesBox .box p {
     font-family: var(--font-02);
     line-height: 24px;
-
 }
 
 
-/* DISCOUNT ON APPOINTMENT  */
+/* DiscountSection */
 
-.DiscountOnappointment {
+.DiscountSection {
+    /* background-color: #474747; */
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 5rem 2% 10rem;
-    /* background-color: #474747; */
     position: relative;
     gap: 3rem;
-
 }
 
-.DiscountOnappointment::before {
+.DiscountSection::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
-    height: 100%;
     width: 100%;
-    background-position: center;
+    height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-    background: url('../img/discountBackGround.jpg');
+    background-position: center;
+    background: url("../img/discountBackGround.jpg");
     z-index: -2;
+
 }
 
-.DiscountOnappointment::after {
+.DiscountSection::after {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
-    height: 100%;
     width: 100%;
-    background-color: #f70077;
-    z-index: -1;
+    height: 100%;
+    background-color: var(--global-color-1);
+    z-index: -2;
     opacity: .65;
+
 }
 
-.DiscountOnappointment .img {
-    max-width: 7rem;
+.DiscountSection .img {
     max-height: 7rem;
+    max-width: 7rem;
     overflow-y: hidden;
 
 }
 
-.DiscountOnappointment .img img {
+.DiscountSection .img img {
     width: 100%;
     height: 100%;
-
 }
 
-.DiscountOnappointment .textinfo {
+.DiscountSection .textinfo {
     display: flex;
     flex-direction: column;
     gap: 15px;
     color: #fff;
 }
 
-.DiscountOnappointment .textinfo h2 {
+.DiscountSection .textinfo h2 {
     font-size: 2.2em;
     font-family: var(--font-02);
-
 }
 
-.DiscountOnappointment .textinfo p {}
+.DiscountSection .textinfo p {}
 
-.DiscountOnappointment a {
+.DiscountSection a {
     padding: 17px 30px;
     border-radius: 7px;
     text-decoration: none;
     border: 1px solid var(--global-color-4);
     background-color: transparent;
-    transition: all .4s ease;
     color: var(--global-color-4);
+    transition: all .4s ease;
     text-align: center;
 }
 
-.DiscountOnappointment a:hover {
-    border: 1px solid var(--global-color-4);
-    color: var(--global-color-1);
+.DiscountSection a:hover {
     background-color: var(--global-color-4);
+    color: var(--global-color-1);
+    border: 1px solid var(--global-color-4);
 }
 
 
-/* transformbox */
+/* transformBox */
 
-.transformbox {
+.transformBox {
     max-width: 1100px;
     text-align: center;
     margin: 0 auto;
     padding: 5rem 2rem;
-    /* border: 1px solid green; */
-    box-shadow: 1px 1px 15px 1px var(--global-color-2);
     position: relative;
+    box-shadow: 1px 1px 15px 1px var(--global-color-2);
     color: #fff;
+    
     border-radius: 10px;
     transform: translateY(-100px);
-    margin: 0 10%;
-
 }
 
-.transformbox::before {
+.transformBox::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
-    height: 100%;
     width: 100%;
-    background-position: center;
+    height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     background: url("../img/discountimg.jpg");
     z-index: -2;
-
 }
 
-.transformbox::after {
+.transformBox::after {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
-    height: 100%;
     width: 100%;
+    height: 100%;
     background-color: var(--global-color-2);
-    z-index: -1;
-    opacity: .7;
+    z-index: -2;
+    opacity: .65;
 }
 
-.transformbox h2 {
+.transformBox h2 {
     font-size: 2.5rem;
     font-weight: 400;
     font-family: var(--font-02);
     margin-bottom: 15px;
 }
 
-.transformbox p {
+.transformBox p {
     font-family: var(--font-02);
 }
 
-
 /* sectionFive */
+
 .sectionFive {
     padding: 2% 5%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 3rem;
-
 }
 
 .sectionFive .BeautySolutions {
@@ -637,7 +626,7 @@ header ul li #NavNum:hover {
 .sectionFive .BeautySolutions ul {}
 
 .sectionFive .BeautySolutions ul li {
-    list-style-type: none;
+    list-style: none;
     margin-top: 1rem;
 }
 
@@ -646,9 +635,9 @@ header ul li #NavNum:hover {
     color: var(--global-color-1);
 }
 
-/* .SectionSix */
+/* sectionSix */
 
-.SectionSix {
+.sectionSix {
     text-align: center;
     padding: 4rem 5%;
     max-width: 1200px;
@@ -656,85 +645,70 @@ header ul li #NavNum:hover {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-
 }
 
-.SectionSix h2 {
+.sectionSix h2 {
     font-size: 2.5rem;
     font-weight: 400;
     font-family: var(--font-02);
 }
 
-.SectionSix .icon {
+.sectionSix .icon {
     display: flex;
     justify-content: center;
     gap: 1rem;
-
 }
 
-.SectionSix .icon a {
+.sectionSix .icon a {
     height: 2rem;
     width: 2rem;
     text-decoration: none;
+    border: 2px solid var(--global-color-0);
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: large;
     border-radius: 50%;
     color: var(--global-color-0);
-    border: 2px solid var(--global-color-0);
     transition: all .4s ease;
-
 }
 
-.SectionSix .icon a:hover {
+.sectionSix .icon a:hover {
     background-color: var(--global-color-0);
     color: #fff;
 }
 
-.SectionSix .imgicon {
-    /* height: fit-content; */
+.sectionSix .imgicon {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
-    bottom: 0;
-    left: 0;
     overflow: hidden;
     padding-bottom: 2rem;
 }
 
-
-.SectionSix .imgicon img {
+.sectionSix .imgicon img {
     border-radius: 50%;
-    position: relative;
-    /* bottom: 10%; */
-    z-index: -1;
 }
 
-.SectionSix .imgicon i {
-    position: absolute;
-    display: block;
-    bottom: -20px;
-    z-index: 1;
+.sectionSix .imgicon i {
     font-size: 5rem;
-    /* transform: translateY(-50px); */
     color: var(--global-color-0);
+    position: absolute;
+    bottom: -20px;
     padding-bottom: 1rem;
 }
 
-.SectionSix p {}
+.sectionSix p {}
 
-.SectionSix p small {
+.sectionSix p small {
     margin-top: 1rem;
     display: block;
     color: var(--global-color-0);
 }
 
-
-/* footer  */
-
+/* footer */
 footer{
     display: flex;
     justify-content: space-between;

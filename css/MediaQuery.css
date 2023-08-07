@@ -1,7 +1,18 @@
 @media (max-width:1200px) {
-    .DiscountOnappointment {
+    .DiscountSection {
         flex-direction: column;
         text-align: center;
+    }
+
+    .transformBox {
+        margin: 0 10%;
+    }
+
+
+    /* ---------about section three------- */
+    .aboutTeam-Info .teamImgInfo {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(100px, 300px));
     }
 }
 
@@ -24,12 +35,49 @@
         height: 100%;
     }
 
-    /* sectionfive  */
+    /* section five  */
     .sectionFive {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    /* ----------.AboutMeInDetail--------- */
+    .AboutMeInDetail {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 3rem;
+    }
 
+    .AboutMeInDetail .img {
+        width: 100%;
+        height: 100%;
+        margin: auto;
+    }
+
+    .AboutMeInDetail .img img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .AboutMeInDetail .infoAboutMe,
+    .AboutMeInDetail .infoAboutMe .iconLink {
+        text-align: center;
+        margin: auto;
+    }
+
+
+
+    /* ---------contact formMap -------------- */
+    .FormMap {
+        flex-direction: column;
+        gap: 3rem;
+        align-items: center
+    }
+
+    .FormMap .map {}
+
+    .FormMap .form {
+        width: 90%;
+    }
 }
 
 @media (max-width:786px) {
@@ -66,21 +114,37 @@
         margin: auto;
     }
 
-
     /* section three  */
-    .sectionthree .servicesBox {
+
+    .sectionThree .servicesBox {
         grid-template-columns: repeat(2, minmax(100px, 280px));
 
     }
 
-    .sectionthree>p { 
+    .sectionThree>p {
         padding: 0 8%;
     }
 
-    /* section four   DiscountOnappointment*/
-    .DiscountOnappointment .textinfo {
+    /* .DiscountSection .textinfo { */
+    .DiscountSection .textinfo {
         padding: 0 5%;
     }
+
+
+    /* .AboutMeInDetail .infoAboutMe .iconLink{ */
+    .AboutMeInDetail .infoAboutMe .iconLink {
+        flex-direction: column;
+        gap: .7rem;
+    }
+
+
+    /* --------Service Section GridBox --------- */
+    .aboutServices .ser-box {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
 }
 
 @media (max-width:610px) {
@@ -94,17 +158,27 @@
 
     }
 
-    /* sectionfive  */
+    /* section five  */
     .sectionFive {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    /* footer  */
+    /* footer */
     footer {
         flex-direction: column;
         text-align: center;
         gap: 1rem;
         padding: 1rem 2%;
+    }
+
+    /* ---------about section three------- */
+    .aboutTeam-Info .teamImgInfo {
+        display: grid;
+        grid-template-columns: repeat(1, minmax(100px, 300px));
+    }
+
+    .aboutTeam-Info .teamImgInfo .box.fourthBox {
+        padding: 12rem 0;
     }
 
 }
@@ -134,14 +208,19 @@
         display: none;
     }
 
-    /* section three  */
-    .sectionthree .servicesBox {
+
+    /* sectionthree  */
+    .sectionThree .servicesBox {
         grid-template-columns: repeat(1, minmax(100px, 280px));
 
     }
 
 
-
+    /* --------Service Section GridBox --------- */
+    .aboutServices .ser-box {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
 
 
 }
